@@ -1,0 +1,166 @@
+# update-time: 2024/08/03 21:33
+[location]
+app = "C:\\apps"
+lib = "C:\\libs"
+
+[[target]]
+id = "Microsoft.VisualStudioCode"
+path = "vscode"
+link = "app"
+
+[[target]]
+id = "Microsoft.PowerToys"
+path = "powertoys"
+link = "app"
+
+[[target]]
+id = "Microsoft.PowerShell"
+path = "pwsh"
+link = "app"
+
+[[target]]
+id = "appmakes.Typora"
+path = "typora"
+link = "app"
+
+[[target]]
+id = "Tencent.WeChat"
+link = "app"
+
+[[target]]
+id = "Joplin.Joplin"
+path = "joplin"
+link = "app"
+
+[[target]]
+id = "Tencent.TencentMeeting"
+link = "app"
+
+[[target]]
+id = "Tencent.TencentVideo"
+link = "app"
+no-upgrade = true
+
+[[target]]
+id = "ByteDance.Doubao"
+link = "app"
+
+[[target]]
+id = "ClashVergeRev.ClashVergeRev"
+path = "clash"
+link = "app"
+
+[[target]]
+id = "agalwood.Motrix"
+path = "motrix"
+link = "app"
+
+[[target]]
+id = "JetBrains.CLion"
+path = "jetbrains\\clion"
+link = "app"
+
+[[target]]
+id = "JetBrains.DataGrip"
+path = "jetbrains\\datagrip"
+link = "app"
+
+[[target]]
+id = "JetBrains.GoLand"
+path = "jetbrains\\goland"
+link = "app"
+
+[[target]]
+id = "JetBrains.PyCharm.Professional"
+path = "jetbrains\\pycharm"
+link = "app"
+
+[[target]]
+id = "JetBrains.IntelliJIDEA.Ultimate"
+path = "jetbrains\\idea"
+link = "app"
+
+[[target]]
+id = "JetBrains.WebStorm"
+path = "jetbrains\\webstorm"
+link = "app"
+
+[[target]]
+id = "Mozilla.Firefox"
+path = "firefox"
+link = "app"
+
+[[target]]
+id = "Google.Chrome"
+path = "chrome"
+link = "app"
+
+[[target]]
+id = "NSIS.NSIS"
+path = "nsis"
+link = "lib"
+
+[[target]]
+id = "Git.MinGit"
+path = "git"
+link = "lib"
+
+[[target]]
+id = "Microsoft.OpenJDK.21"
+path = "openjdk21"
+link = "lib"
+
+[[target]]
+id = "CoreyButler.NVMforWindows"
+path = "nvm"
+link = "lib"
+
+[[target]]
+id = "UPX.UPX"
+path = "upx"
+link = "lib"
+
+[[target]]
+id = "astral-sh.ruff"
+path = "ruff"
+link = "lib"
+
+[[target]]
+id = "Docker.DockerCLI"
+path = "docker/cli"
+link = "lib"
+
+[[target]]
+id = "Docker.DockerCompose"
+path = "docker/compose"
+link = "lib"
+
+[[target]]
+id = "Kubernetes.kubectl"
+path = "kubectl"
+link = "lib"
+
+[[target]]
+id = "Golang.Go"
+path = "golang"
+link = "lib"
+
+[[target]]
+id = "Anaconda.Miniconda3"
+path = "miniconda3"
+link = "lib"
+
+[[target]]
+id = "BurntSushi.ripgrep.MSVC"
+path = "ripgrep"
+link = "lib"
+
+[[target]]
+id = "Helix.Helix"
+path = "helix"
+link = "lib"
+
+[[target]]
+id = "sharkdp.fd"
+path = "rsfd"
+link = "lib"
