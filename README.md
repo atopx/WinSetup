@@ -30,7 +30,7 @@ go install github.com/atopx/winsetup@latest
 > 我的真实配置: [config.example.toml](./config.toml)
 
 ```toml
-# 并发安装的协程数量, 建议1-8之间，特别牛逼的配置理论上没有上限, 比如 `百核心、千G内存、万兆带宽` 开个200并发没问题
+# 并发安装的协程数量, 建议1-8之间
 concurrent = 4
 
 # 路径别名
