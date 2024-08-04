@@ -19,6 +19,11 @@ path = "pwsh"
 link = "app"
 
 [[target]]
+id = "Insomnia.Insomnia"
+path = "insomnia"
+link = "app"
+
+[[target]]
 id = "appmakes.Typora"
 path = "typora"
 link = "app"
@@ -127,12 +132,12 @@ link = "lib"
 
 [[target]]
 id = "Docker.DockerCLI"
-path = "docker/cli"
+path = "docker\\cli"
 link = "lib"
 
 [[target]]
 id = "Docker.DockerCompose"
-path = "docker/compose"
+path = "docker\\compose"
 link = "lib"
 
 [[target]]
