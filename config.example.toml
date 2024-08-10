@@ -1,7 +1,42 @@
 # update-time: 2024/08/03 21:33
 [location]
-app = "C:\\apps"
-lib = "C:\\libs"
+app = "D:\\apps"
+lib = "D:\\libs"
+
+[[target]]
+id = "Microsoft.DevHome"
+path = "devhome"
+link = "lib"
+
+[[target]]
+id = "JanDeDobbeleer.OhMyPosh"
+path = "posh"
+link = "lib"
+
+[[target]]
+id = "LocalSend.LocalSend"
+path = "localsend"
+link = "app"
+
+[[target]]
+id = "astral-sh.ruff"
+path = "ruff"
+link = "lib"
+
+[[target]]
+id = "7zip.7zip"
+path = "7zip"
+link = "app"
+
+[[target]]
+id = "Daum.PotPlayer"
+path = "potplayer"
+link = "app"
+
+[[target]]
+id = "PremiumSoft.NavicatPremium"
+path = "navicat"
+link = "app"
 
 [[target]]
 id = "Microsoft.VisualStudioCode"
@@ -19,17 +54,23 @@ path = "pwsh"
 link = "app"
 
 [[target]]
-id = "Insomnia.Insomnia"
-path = "insomnia"
-link = "app"
-
-[[target]]
 id = "appmakes.Typora"
 path = "typora"
 link = "app"
 
 [[target]]
 id = "Tencent.WeChat"
+path = "wechat"
+link = "app"
+
+[[target]]
+id = "Tencent.QQMusic"
+path = "qqmusic"
+link = "app"
+
+[[target]]
+id = "Pylogmon.pot"
+path = "pot"
 link = "app"
 
 [[target]]
@@ -39,15 +80,6 @@ link = "app"
 
 [[target]]
 id = "Tencent.TencentMeeting"
-link = "app"
-
-[[target]]
-id = "Tencent.TencentVideo"
-link = "app"
-no-upgrade = true
-
-[[target]]
-id = "ByteDance.Doubao"
 link = "app"
 
 [[target]]
@@ -62,32 +94,32 @@ link = "app"
 
 [[target]]
 id = "JetBrains.CLion"
-path = "jetbrains\\clion"
+path = "clion"
 link = "app"
 
 [[target]]
 id = "JetBrains.DataGrip"
-path = "jetbrains\\datagrip"
+path = "datagrip"
 link = "app"
 
 [[target]]
 id = "JetBrains.GoLand"
-path = "jetbrains\\goland"
+path = "goland"
 link = "app"
 
 [[target]]
 id = "JetBrains.PyCharm.Professional"
-path = "jetbrains\\pycharm"
+path = "pycharm"
 link = "app"
 
 [[target]]
 id = "JetBrains.IntelliJIDEA.Ultimate"
-path = "jetbrains\\idea"
+path = "idea"
 link = "app"
 
 [[target]]
 id = "JetBrains.WebStorm"
-path = "jetbrains\\webstorm"
+path = "webstorm"
 link = "app"
 
 [[target]]
@@ -132,12 +164,12 @@ link = "lib"
 
 [[target]]
 id = "Docker.DockerCLI"
-path = "docker\\cli"
+path = "DockerCli"
 link = "lib"
 
 [[target]]
 id = "Docker.DockerCompose"
-path = "docker\\compose"
+path = "DockerCompose"
 link = "lib"
 
 [[target]]
@@ -149,6 +181,12 @@ link = "lib"
 id = "Golang.Go"
 path = "golang"
 link = "lib"
+
+[[target]]
+id = " GitHub.GitLFS"
+path = "git/lfs"
+link = "lib"
+skip-dependencies = true
 
 [[target]]
 id = "Anaconda.Miniconda3"

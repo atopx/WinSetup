@@ -16,8 +16,13 @@
 ### 安装依赖程序
 
 - winget: 参考官方 https://learn.microsoft.com/en-us/windows/package-manager/winget/
+- winget client module: `Install-Module -Name Microsoft.WinGet.Client`
+
+如果需要代理请在安装前执行: `winget settings --enable ProxyCommandLineOptions`
 
 ### 安装本程序
+
+下载可执行文件或使用`go install`
 
 ```
 go install github.com/atopx/winsetup@latest
@@ -53,6 +58,10 @@ no-upgrade = true
 ignore-security-hash = false
 # uninstall-previous 升级期间卸载以前版本的程序包, 可选、默认false
 uninstall-previous = false
+# skip-dependencies 跳过处理包依赖项和 Windows 功能
+skip-dependencies = false
+# version 使用指定的版本；默认为最新版本
+version = ""
 
 # 这个例子实际安装位置: C:\libs\golang\go
 [[target]]

@@ -26,12 +26,16 @@ type TargetItem struct {
 	name string
 	Path string `toml:"path"`
 	Link string `toml:"link"`
+	// Version 使用指定的版本；默认为最新版本
+	Version string `toml:"version"`
 	// NoUpgrade 如果已安装的版本已存在，则跳过升级
 	NoUpgrade bool `toml:"no-upgrade"`
 	// IgnoreSecurityHash 忽略安装程序哈希检查失败
 	IgnoreSecurityHash bool `toml:"ignore-security-hash"`
 	// UninstallPrevious 升级期间卸载以前版本的程序包
 	UninstallPrevious bool `toml:"uninstall-previous"`
+	// skip-dependencies 跳过处理包依赖项和 Windows 功能
+	SkipDependencies bool `toml:"skip-dependencies"`
 }
 
 var cfg = new(Config)
@@ -75,15 +79,21 @@ func installer(item *TargetItem) error {
 		return fmt.Errorf("check path error: %w", err)
 	}
 	defer CleanEmptyDir(location)
-	command := fmt.Sprintf("winget install %s -l %s --verbose", item.Id, location)
+	command := fmt.Sprintf("winget install --id %s -l %s --verbose", item.Id, location)
 	if item.IgnoreSecurityHash {
 		command += " --ignore-security-hash"
 	}
 	if item.NoUpgrade {
 		command += " --no-upgrade"
 	}
+	if item.Version != "" {
+		command += " --version" + item.Version
+	}
 	if item.UninstallPrevious {
 		command += " --uninstall-previous"
+	}
+	if item.SkipDependencies {
+		command += " --skip-dependencies"
 	}
 	item.name = item.Id[strings.LastIndex(item.Id, ".")+1:]
 	slog.Info(fmt.Sprintf("[%s] start install: %s\n", item.name, command))
